@@ -1,6 +1,6 @@
 {
   "name": "svelte-reedux",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A slim wrapper allowing the connection of redux in svelte SPAs",
   "main": "src/index.js",
   "repository": "git@github.com:icarus-sullivan/svelte-redux.git",

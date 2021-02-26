@@ -14,14 +14,14 @@
     };
   });
 
-  setContext('@redux/store', store);
-
-  setContext('@redux/dispatch', store.dispatch);
-
-  setContext('@redux/selector', (selector) => derived(
-    state,
-    ($state) => selector($state)
-  ));
+  setContext('@redux', {
+    store: () => store,
+    dispatch: () => store.dispatch,
+    selector: (selector) => derived(
+      state,
+      ($state) => selector($state)
+    )
+  });
 </script>
 
 <slot />
