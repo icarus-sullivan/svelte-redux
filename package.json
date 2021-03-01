@@ -1,6 +1,6 @@
 {
   "name": "svelte-reedux",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A slim wrapper allowing the connection of redux in svelte SPAs",
   "main": "src/index.js",
   "repository": "git@github.com:icarus-sullivan/svelte-redux.git",
@@ -9,6 +9,10 @@
   "peerDependencies": {
     "redux": "^4.0.5",
     "svelte": "^3.34.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "files": [
     "src/*"
@@ -22,5 +26,14 @@
     "react-redux",
     "connect",
     "svelte3"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-teleology": "1.0.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5"
+  }
 }

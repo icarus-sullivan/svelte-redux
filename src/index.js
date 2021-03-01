@@ -1,4 +1,5 @@
 import { getContext } from 'svelte';
+
 export { default as Provider } from './Provider.svelte';
 
 export const useStore = () => getContext('@redux').store();

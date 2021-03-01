@@ -4,15 +4,12 @@
   
   export let store;
   
-  const state = readable(store.getState(), (set) => {
-    let run = true;
-    store.subscribe(() => {
-      if (run) set(store.getState());
-    });
-    return () => {
-      run = false;
-    };
-  });
+  const state = readable(
+    store.getState(), 
+    (set) => 
+      store.subscribe(() => set(store.getState())
+    )
+  );
 
   setContext('@redux', {
     store: () => store,
