@@ -12,7 +12,6 @@ npm i --save svelte-reedux
 ## Usage
 In your App.svelte or top-most level component wrap everything in the Provider component. 
 
-_App.svelte_
 ```javascript
 <script>
 import { store } from './store';
@@ -45,4 +44,3 @@ You entered: {$username}
 <input value={username} on:input={updateUsername}>
 </div>
 ```
-_Form.svelte_
